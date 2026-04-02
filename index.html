@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localhost Message Sender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Localhost Message Sender</h1>
+        <div class="input-group">
+            <label for="messageInput">Message:</label>
+            <textarea id="messageInput" rows="10" placeholder="Enter your message here..."></textarea>
+        </div>
+        <div class="input-group">
+            <label for="portInput">Port:</label>
+            <input type="number" id="portInput" value="8080" min="1" max="65535">
+        </div>
+        <button id="sendButton">Send Message</button>
+        <div id="statusMessage" class="status-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
